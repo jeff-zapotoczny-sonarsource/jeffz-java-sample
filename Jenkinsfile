@@ -1,6 +1,8 @@
 node {
    def mvnHome
    stage('Preparation') { // for display purposes
+   	  // print environment
+      echo sh(returnStdout: true, script: 'env')
       // Get code from GitHub repository
       git branch: '${BRANCH_NAME}', url:'https://github.com/jeff-zapotoczny-sonarsource/jeffz-java-sample.git'
       // Get the Maven tool.
