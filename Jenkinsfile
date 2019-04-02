@@ -12,7 +12,7 @@ node {
       // Run the maven build
     withSonarQubeEnv('SQServer') {
       //if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean verify sonar:sonar -Dsonar.pullrequest.branch=${BRANCH_NAME} -Dsonar.pullrequest.key=${PULL_REQUEST} -Dsonar.pullrequest.base=master"
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean verify sonar:sonar -Dsonar.pullrequest.branch=${BRANCH_NAME} -Dsonar.pullrequest.key=${CHANGE_ID} -Dsonar.pullrequest.base=master"
       //} else {
          //bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       //}
