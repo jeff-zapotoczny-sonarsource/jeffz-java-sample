@@ -34,5 +34,6 @@ public class AppTest
     public void testApp()
     {
     	App.main(null);
+    	assert(true);
     }
 }
