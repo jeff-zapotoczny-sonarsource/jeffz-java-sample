@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         withSonarQubeEnv('SQServer') {
-          withMaven('M3') {
+          withMaven(maven: 'M3') {
             script {
               if (env.CHANGE_ID) {
                 // build like a pull request 
