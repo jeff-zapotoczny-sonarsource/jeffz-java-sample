@@ -18,4 +18,10 @@ public class App
     		System.out.println("I did stuff");
     	}
     }
+    
+    public void doMoreStuff() {
+    	while(true) {
+    		System.out.println("loop never ends!");
+    	}
+    }
 }
