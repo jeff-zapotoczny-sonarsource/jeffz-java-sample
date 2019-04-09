@@ -14,8 +14,14 @@ public class App
     }
     
     public void doStuff() {
-    	while(true) {
+    	for (int i = 0; i < 100; i++) {
     		System.out.println("I did stuff");
+    	}
+    }
+    
+    public void doMoreStuff() {
+    	while (true) {
+    		System.out.println("infinite loop!");
     	}
     }
     
