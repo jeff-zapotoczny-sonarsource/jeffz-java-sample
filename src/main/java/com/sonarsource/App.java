@@ -1,5 +1,9 @@
 package com.sonarsource;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
 /**
  * Hello world!
  *
@@ -19,9 +23,12 @@ public class App
     	}
     }
     
-    public void doMoreStuff() {
-    	while (true) {
-    		System.out.println("infinite loop!");
+    public void doEvenMoreStuff() {
+    	try {
+    		OutputStream stream = new FileOutputStream("foo.txt");
+    		System.out.println("I opened a file");
+    	} catch (FileNotFoundException fnfe) {
+    		System.out.println(fnfe.getMessage());
     	}
     }
     
