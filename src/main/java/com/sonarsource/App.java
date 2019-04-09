@@ -19,8 +19,8 @@ public class App
     	}
     }
     
-    public void doMoreStuff() {
-    	while(true) {
+    public void doEvenMoreStuff() {
+    	while(true) { // infinite loop
     		System.out.println("loop never ends!");
     	}
     }
