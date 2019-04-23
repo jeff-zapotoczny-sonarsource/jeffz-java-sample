@@ -28,7 +28,6 @@ public class App
     		OutputStream stream = new FileOutputStream("foo.txt");
     		System.out.println("I opened a file");
     	} catch (FileNotFoundException fnfe) {
-    		System.out.println(fnfe.getMessage());
     	}
     }
     
