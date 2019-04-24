@@ -20,7 +20,7 @@ public class App
     }
     
     public void doEvenMoreStuff() {
-    	while(true) { // infinite loop
+    	for(int i=0; i< 50; i++) { 
     		System.out.println("loop never ends!");
     	}
     }
