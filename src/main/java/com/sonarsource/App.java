@@ -13,9 +13,8 @@ public class App
 
 	public static void main( String[] args )
 	{
-		logger.info("Hello World!");
 		App app = new App();
-		app.doStuff();
+		logger.info("App did stuff: " + app.doStuff());
 	}
 
 	public int doStuff() {
