@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class App 
 {
-	protected static Logger logger = LogManager.getLogger();
+	protected static Logger logger = LogManager.getLogger(App.class);
 	
     public static void main( String[] args )
     {
@@ -18,10 +18,12 @@ public class App
         app.doStuff();
     }
     
-    public void doStuff() {
-    	for (int i = 0; i < 100; i++) {
-    		logger.info("I did stuff");
+    public int doStuff() {
+    	int sum = 0;
+    	for (int i = 0; i < 5; i++) {
+    		sum += i;
     	}
+    	return sum;
     }
-    
+   
 }

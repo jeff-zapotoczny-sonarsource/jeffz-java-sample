@@ -31,9 +31,10 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-    public void testApp()
+    public void testStuff()
     {
-    	App.main(null);
-    	assert(true);
+    	App app = new App();
+    	int result = app.doStuff();
+    	assertEquals(10, result);
     }
 }
