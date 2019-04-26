@@ -27,7 +27,12 @@ public class AppTest
     {
         return new TestSuite( AppTest.class );
     }
-
+    
+    public void testMain() {
+    	App.main(null);
+    	assertTrue(true);
+    }
+    
     /**
      * Rigorous Test :-)
      */
