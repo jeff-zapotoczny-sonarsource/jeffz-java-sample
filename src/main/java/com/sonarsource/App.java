@@ -18,11 +18,15 @@ public class App
 	}
 
 	public int doStuff() {
-		int sum = 0;
-		for (int i = 0; i < 5; i++) {
-			sum += i;
+		try {
+			int sum = 0;
+			for (int i = 0; i < 5; i++) {
+				sum += i;
+			}
+			return sum;
+		} catch (Exception e) {
 		}
-		return sum;
+		return -1;
 	}
 
 }
