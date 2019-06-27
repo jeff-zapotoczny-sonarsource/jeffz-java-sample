@@ -21,7 +21,7 @@ public class App
 		int sum = 0;
 		if (true) {
 		    for (int i = 0; i < 5; i++) {
-			sum += i;
+			sum =+ i;
 		    }
 		}
 		return sum;
