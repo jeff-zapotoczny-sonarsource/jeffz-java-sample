@@ -16,7 +16,7 @@ pipeline {
                 sh "mvn -Dmaven.test.failure.ignore clean verify sonar:sonar"
 	      } else {
                 // build like a branch
-                sh "mvn -Dmaven.test.failure.ignore clean verify sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}"
+                //sh "mvn -Dmaven.test.failure.ignore clean verify sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}"
               }
             }
           }
