@@ -15,3 +15,7 @@ buildNumber.properties
 .project
 .classpath
 .settings/
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/misc.xml
+/.idea/vcs.xml
