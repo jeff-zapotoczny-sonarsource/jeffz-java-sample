@@ -7,7 +7,7 @@
 	<artifactId>jeffz-java-sample</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>jeffz-java-sample</name>
+	<name>GitHub.com Java Example</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
