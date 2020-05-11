@@ -21,15 +21,8 @@ pipeline {
         withSonarQubeEnv('SQServer') {
           withMaven(maven: 'M3') {
             script {
-              if (env.CHANGE_ID) {
-                // analyze as pull request 
-                sh "mvn sonar:sonar -Dsonar.pullrequest.branch=${CHANGE_BRANCH} -Dsonar.pullrequest.key=${CHANGE_ID} -Dsonar.pullrequest.base=master"
-              } else if (env.BRANCH_NAME=="master") {
-                sh "mvn sonar:sonar"
-	      } else {
-                // analyze as a branch
-                //sh "mvn sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}"
-              }
+	      // all analysis now automatically parameterized
+              sh "mvn sonar:sonar"
             }
           }
         }
